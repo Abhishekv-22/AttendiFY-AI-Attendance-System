@@ -28,7 +28,7 @@ This project focuses on **backend logic and computer vision**, and is structured
 AttendiFY/
 │
 ├── app/
-│   ├── __init__.py
+│   ├──  __init__.py
 │   └── face_recognition_service.py   # Core face recognition logic
 │
 ├── students/
