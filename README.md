@@ -28,7 +28,7 @@ This project focuses on **backend logic and computer vision**, and is structured
 AttendiFY/
 │
 ├── app/
-│   ├──  __init__.py
+│   ├── __init__.py
 │   └── face_recognition_service.py   # Core face recognition logic
 │
 ├── students/
@@ -64,3 +64,9 @@ AttendiFY/
 ### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
+
+### 2. Run the project
+```bash
+python run_local.py
+
