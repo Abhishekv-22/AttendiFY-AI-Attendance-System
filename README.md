@@ -28,20 +28,20 @@ This project focuses on **backend logic and computer vision**, and is structured
 AttendiFY/
 │
 ├── app/
-│ ├── init.py
-│ └── face_recognition_service.py # Core face recognition logic
+│   ├── __init__.py
+│   └── face_recognition_service.py   # Core face recognition logic
 │
 ├── students/
-│ ├── student_data.csv # Student metadata (name, roll no, etc.)
-│ └── *.jpg # One clear image per student
+│   ├── student_data.csv              # Student metadata (name, roll no, etc.)
+│   └── *.jpg                          # One clear image per student
 │
 ├── test_images/
-│ └── class_photo.jpg # Sample classroom/group image
+│   └── class_photo.jpg               # Sample classroom/group image
 │
 ├── outputs/
-│ └── (generated CSV & images)
+│   └── (generated CSV & images)
 │
-├── run_local.py # Entry point to run locally
+├── run_local.py                      # Entry point to run locally
 ├── requirements.txt
 └── README.md
 
