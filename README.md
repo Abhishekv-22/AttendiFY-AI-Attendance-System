@@ -25,26 +25,47 @@ This project focuses on **backend logic and computer vision**, and is structured
 ---
 
 ## 📁 Project Structure
-AttendiFY/
-│
+
+```text
+AttendiFY_Project/
 ├── app/
-│   ├── __init__.py
-│   └── face_recognition_service.py   # Core face recognition logic
-│
+│   └── face_recognition_service.py
 ├── students/
-│   ├── student_data.csv              # Student metadata (name, roll no, etc.)
-│   └── *.jpg                          # One clear image per student
-│
+│   ├── student_data.csv
+│   └── *.jpg
 ├── test_images/
-│   └── class_photo.jpg               # Sample classroom/group image
-│
+│   └── class_photo.jpg
 ├── outputs/
-│   └── (generated CSV & images)
-│
-├── run_local.py                      # Entry point to run locally
+│   ├── attendance_2025-12-17_13-49-12.csv
+│   ├── result_2025-12-17_13-49-12.jpg
+│   └── docs/
+│       └── sample_attendance_output.jpg
+├── run_local.py
 ├── requirements.txt
 └── README.md
+```
+---
 
+## 📸 Sample Output
+
+Below is an example of the system marking attendance from a single classroom image.
+
+- Known students are identified and labeled
+- Unknown faces are explicitly marked as "Unknown"
+- Bounding boxes are drawn using OpenCV
+- Attendance is saved automatically as a CSV file
+
+> Note: Sample images are used for demonstration purposes.
+![Sample Attendance Output](outputs/docs/sample_attendance_output.jpg)
+
+---
+
+## 🧩 Design Decisions
+
+- Core face recognition logic is isolated in a service module (`face_recognition_service.py`)
+- Student metadata is loaded from a CSV file for easy scalability
+- The system is UI-agnostic and can be extended to REST APIs or Streamlit
+- Unknown faces are intentionally excluded from attendance to avoid false positives
 
 ---
 
